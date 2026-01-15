@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dijital Arşiv | Şair Hayatım, Şiir Dünyam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Segoe UI", Arial, sans-serif;
+      background:#f4f6fb;
+      color:#222;
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1000px;margin:auto;padding:0 20px}
+
+    header{
+      background:#fff;
+      border-bottom:1px solid #ddd;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 0;
+    }
+    .logo{
+      font-size:22px;
+      font-weight:700;
+      color:#1e2a5a;
+    }
+    nav a{
+      margin-left:15px;
+      padding:8px 12px;
+      border-radius:8px;
+      font-weight:500;
+    }
+    nav a:hover{background:#eef0f7}
+    .btn{
+      background:#1e2a5a;
+      color:#fff;
+      padding:10px 16px;
+      border-radius:10px;
+      font-weight:600;
+      display:inline-block;
+    }
+    .btn.secondary{
+      background:#4b5cb8;
+      color:#fff;
+      border:0;
+    }
+
+    main{padding:60px 0}
+    h1{
+      color:#1e2a5a;
+      margin-bottom:10px;
+    }
+
+    .box{
+      background:#fff;
+      padding:30px;
+      border-radius:18px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      margin-bottom:30px;
+    }
+
+    .actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:15px;
+    }
+
+    iframe{
+      width:100%;
+      height:650px;
+      border:1px solid #ccc;
+      border-radius:12px;
+      margin-top:20px;
+    }
+
+    footer{
+      background:#fff;
+      border-top:1px solid #ddd;
+      padding:25px 0;
+      text-align:center;
+      font-size:14px;
+      color:#666;
+    }
+
+    @media(max-width:900px){
+      nav{display:none}
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <div class="logo">Şair Hayatım</div>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="proje.html">Proje</a>
+      <a href="temalar.html">Temalar</a>
+      <a href="sairler.html">Şairler</a>
+      <a class="btn" href="anket.html">Anket</a>
+      <a class="btn" href="arsiv.html">Arşiv</a>
+    </nav>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<main>
+  <div class="container">
+
+    <h1>Dijital Şiir Arşivi</h1>
+    <p>
+      Proje kapsamında incelenen Türk ve yabancı şairlere ait şiirler;
+      işlenen temalar, kullanılan imgeler ve gençlik duyguları açısından
+      değerlendirilmiş ve dijital arşiv haline getirilmiştir.
+      Bu arşiv, çalışmanın kalıcı ve erişilebilir bir çıktısı olarak hazırlanmıştır.
+    </p>
+
+    <div class="box">
+      <h2>Arşiv Dosyaları</h2>
+      <p>
+        Aşağıdaki bağlantılar aracılığıyla proje sürecinde oluşturulan
+        dijital şiir arşivine erişebilirsiniz.
+      </p>
+
+      <div class="actions">
+        <a class="btn"
+           href="assets/docs/Dijital_Siir_Arsivi_DOLDURULMUS.pdf"
+           target="_blank"
+           rel="noopener">
+          PDF Olarak Aç/İndir
+        </a>
+
+        <a class="btn secondary"
+           href="assets/docs/Dijital_Siir_Arsivi_DOLDURULMUS.docx"
+           target="_blank"
+           rel="noopener">
+          Word Olarak İndir
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>PDF Önizleme</h2>
+      <p>
+        Dijital şiir arşivinin PDF sürümünü sayfa üzerinden inceleyebilirsiniz.
+      </p>
+
+      <iframe src="assets/docs/Dijital_Siir_Arsivi_DOLDURULMUS.pdf"></iframe>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 | Şair Hayatım, Şiir Dünyam – TÜBİTAK Projesi
+</footer>
+
+</body>
+</html>
